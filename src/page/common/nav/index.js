@@ -27,7 +27,7 @@ var nav = {
     },
     loadUserInfo:function(){
         _user.checkLogin(function(res){
-            $('.user .not-login').hide().siblings('.user .login').show().find('.username').text(res.username)
+            $('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.username)
         },function(err){
             
         })
